@@ -1,0 +1,407 @@
+
+/* ---------------------------------------------------------------------
+Layout Grid - examples with push and pulls
+Obviously spacing, etc will change. Use clearfix route if you must support IE7
+------------------------------------------------------------------------ */
+
+.grid {
+    clear: both;
+    overflow: hidden;
+}
+
+.grid {
+    float: left;
+    margin-left: 16px;
+}
+
+.grid-flex {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 11px;
+}
+
+.rtl {
+    float: right;
+}
+
+.grid:first-child,
+.grid.first,
+.grid-flex:first-child,
+.grid-flex.no-gutter,
+.no-gutter {
+    margin-left: 0;
+}
+
+.grid.last {
+    margin-right: 0;
+}
+
+.grid-1 {
+    width: 67px;
+}
+
+.grid-2 {
+    width: 150px;
+}
+
+.grid-3 {
+    width: 233px;
+}
+
+.grid-4 {
+    width: 316px;
+}
+
+.grid-5 {
+    width: 399px;
+}
+
+.grid-6 {
+    width: 482px;
+}
+
+.grid-7 {
+    width: 565px;
+}
+
+.grid-8 {
+    width: 648px;
+}
+
+.grid-9 {
+    width: 731px;
+}
+
+.grid-10 {
+    width: 814px;
+}
+
+.grid-11 {
+    width: 897px;
+}
+
+.grid-12 {
+    width: 980px;
+}
+
+.grid-2.ext {
+    width: 180px;
+}
+
+.grid-half {
+    width: 290px;
+}
+
+.grid-4-responsive {
+    width: 33%;
+}
+
+.push-gutter {
+    margin-right: 16px;
+}
+
+.push-lg {
+    margin-left: 32px;
+}
+
+.push-1,
+.grid.push-1 {
+    margin-left: 83px;
+}
+
+.push-1-alt,
+.grid.push-1-alt {
+    margin-left: 100px;
+}
+
+.push-2,
+.grid.push-2 {
+    margin-left: 150px;
+}
+
+/* ---------------------------------------------------------------------
+  Headings
+------------------------------------------------------------------------ */
+.hdg {
+    font-family: Helvetica, arial, sans-serif;
+}
+
+.hdg-a {
+    font-size: 48px;
+}
+
+.hdg-b {
+    font-size: 35px;
+}
+
+.hdg-c {
+    font-size: 28px;
+}
+
+.hdg-d {
+    font-size: 22px;
+}
+
+.hdg-e {
+    font-size: 18px;
+}
+
+.hdg-f {
+    font-size: 16px;
+}
+
+.hdg-g {
+    font-size: 14px;
+}
+
+
+/* ---------------------------------------------------------------------
+  Blocks Group
+------------------------------------------------------------------------ */
+
+.blocks {
+    overflow: hidden;
+    margin-left: -3.1%;
+}
+
+.blocks > * {
+    float: left;
+    margin-left: 3.1%;
+}
+
+.blocks-2up > * {
+    width: 46.9%;
+}
+
+.blocks-3up > * {
+    width: 30.23%
+}
+
+/* ---------------------------------------------------------------------
+  Media Object - thank you Nicole Sullivan
+------------------------------------------------------------------------ */
+
+.media-img {
+    float: left;
+    margin-right: 16px;
+}
+
+.media-body,
+.media {
+    overflow: hidden;
+}
+
+.media-vertical > * {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+/* ---------------------------------------------------------------------
+  Lists > Horizontal/Vertical
+------------------------------------------------------------------------ */
+
+.h-list {
+    overflow: hidden;
+}
+
+.h-list > * {
+    float: left;
+}
+
+.h-list-sm > * {
+    margin-left: 8px;
+}
+
+.h-list-md > * {
+    margin-left: 16px;
+}
+
+.h-list-lg > * {
+    margin-left: 32px;
+}
+
+.h-list .first.alt {
+    margin-left: 16px;
+}
+
+.h-list-divided li {
+    border-left: 1px solid #6e7a84;
+    margin-left: 8px;
+    padding-left: 8px;
+}
+
+.h-list-divided li:first-child {
+    border: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.v-list-md > * {
+    margin-top: 16px;
+}
+
+.v-list td,
+.v-list > * {
+    margin-bottom: 4px;
+}
+
+.v-list-divided li {
+    padding: 16px 0;
+    border-bottom: 1px dotted #292f35;
+}
+
+.v-list-divided li.first {
+    border-top: 1px dotted #292f35;
+}
+
+.v-list-divided .last {
+    border: 0;
+    padding-bottom: 0;
+}
+
+
+
+/* ---------------------------------------------------------------------
+  Layout Styles > Vertical Rhythm (vr) spacing between sections & components
+  Be careful with these - usually just have margins on actual modules
+------------------------------------------------------------------------ */
+
+.layout-vr-tiny {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.layout-vr-sm {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.layout-vr-md {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.layout-vr-lg {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.layout-vr-xlg {
+    margin-bottom: 48px;
+}
+
+/* ---------------------------------------------------------------------
+  Layout Styles > Inside padding on elements
+  Again - use only if necessary - actual modules should incorporate this.
+------------------------------------------------------------------------ */
+
+.layout-align-button {
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.layout-inside-tiny {
+    padding: 4px;
+}
+
+.layout-inside-sm {
+    padding: 8px;
+}
+
+.layout-inside-md {
+    padding: 16px;
+}
+
+.layout-inside-lg {
+    padding: 32px;
+}
+
+.layout-inside-xlg {
+    padding: 64px;
+}
+
+.partial {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.layout-inside-bottom-lg {
+    padding-bottom: 32px;
+}
+
+.partial-alt {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.layout-exclude {
+    padding-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------
+Layout Styles > Vertically centering content
+Again - use only if necessary - actual modules should incorporate this.
+------------------------------------------------------------------------ */
+
+.layout-vc-wrapper {
+    display: table;
+}
+
+.layout-vc {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.layout-vt {
+    display: table-cell;
+    vertical-align: top;
+}
+
+/* ---------------------------------------------------------------------
+  Layout Styles > Positioning and aligning elements
+  Again - use only if necessary - actual modules should incorporate this.
+------------------------------------------------------------------------ */
+
+.layout-centered {
+    text-align: center;
+}
+
+.layout-centered-img,
+.layout-centered-img img {
+    margin: 0 auto;
+    display: block;
+}
+
+.layout-right-img {
+    float: right;
+    margin: 16px 0 16px 16px;
+}
+
+.layout-left-img {
+    float: left;
+    margin: 16px 16px 16px 0;
+}
+
+/* ---------------------------------------------------------------------
+  Ways to break out modules, to ensure you spacing is correct
+  --your naming should be more appropriate than box - this is just an example
+------------------------------------------------------------------------ */
+
+.box {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.box-hd {
+    margin-bottom: 15px;
+}
+
+.box-bd {
+    margin-bottom: 10px;
+}
+
+.box-callout {
+    text-align: right;
+}
